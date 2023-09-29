@@ -1,0 +1,20 @@
+
+    .form-style {
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 20px 12px 10px 20px;
+      font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    label{
+      font-weight:bold;
+      width:100px;
+      font-size:14px;
+    }
+    .form-style input[type="text"],
+    .form-style input[type="password"]{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border:1px solid #BEBEBE;
+      padding: 7px;
+    }

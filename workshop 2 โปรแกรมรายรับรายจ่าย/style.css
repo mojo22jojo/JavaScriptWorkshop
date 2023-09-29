@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root{
+    --box-shadow:0 1px 3px rgba(0,0,0,0.12)
+}
+*{
+    box-sizing: border-box; /*ให้ขนาดกล่องทั้งหมดเท่ากัน */
+    font-family: 'Itim', cursive;
+}
+body{
+    font-family:'Itim', cursive;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin:0;
+}
+.btn{
+    cursor: pointer;
+    font-family:'Itim', cursive;
+    background-color: purple;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    /* display: block; */
+    margin: 10px 0 30px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    
+}
+.container{
+    margin: 30px auto;
+    width: 350px;
+}
+h1{
+    letter-spacing: 1px;
+    margin:0;
+}
+h3{
+    border-bottom: 1px solid#bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+h4{
+    margin:0;
+}
+.income-expense-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    margin: 20px 0;
+}
+.income-expense-container>div{
+    flex:1;
+    text-align: center;
+}
+.income-expense-container>div:first-of-type{
+    border-right: 3px solid#dedede;
+}
+.money{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+.money.plus{
+    color: #2ecc71;
+}
+.money.minus{
+    color: red;
+}
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type ="text"],input[type="number"]{
+    border: 1px solid#dedede;
+    border-radius: 8px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.list li{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 8px;
+    margin: 10px 0;   
+}
+.list li.plus{
+    border-left: 5px solid #2ecc71;
+}
+.list li.minus{
+    border-left: 5px solid red;
+}
+.delete-btn1{
+    cursor: pointer;
+    background-color: red;
+    color: #333;
+    border: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    width: 25px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    position: absolute; 
+    top: 50%;
+    right:0;
+    transform: translate(110%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+}
+.list li:hover .delete-btn1{
+    opacity: 1; 
+}
+.delete-btn2{ 
+    cursor: pointer; 
+    background-color: #2ecc71; /*dsd*/
+    color: #333;
+    border: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    width: 25px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    position: absolute;  
+    top: 50%;
+    right:0;
+    transform: translate(110%,-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease;  
+} 
+.list li:hover .delete-btn2{ 
+    opacity: 1; 
+}
+.btn:focus,.delete-btn1:focus,.delete-btn2:focus{
+    outline:0;
+}
+
+
